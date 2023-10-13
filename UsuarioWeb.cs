@@ -22,6 +22,27 @@ namespace EcoMoment_Desktop
             this.senha = senha;
         }
 
+        public bool cadastrarUsuarioWeb()
+        {
+            bool cad = false;
+            try
+            {
+                DAO_Conexao.con.Open();
+                MySqlCommand insere = new MySqlCommand("insert into EcoMomentBD_UsuarioWeb (NomeWeb, EmailWeb, SenhaWeb) values ('" + nome + "', '" + email + "', '" + senha + "')", DAO_Conexao.con);
+                insere.ExecuteNonQuery();
+                cad = true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            finally
+            {
+                DAO_Conexao.con.Close();
+            }
+            return cad;
+        }
+
         public bool consultarUsuarioWeb(int id)
         {
             bool existe = false;

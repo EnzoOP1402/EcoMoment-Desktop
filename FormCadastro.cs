@@ -19,11 +19,21 @@ namespace EcoMoment_Desktop
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            
             if(txtEmailCadastrar.Text != "" && txtNomeCadastrar.Text != "" && txtSenha2Cadastrar.Text != "" && txtSenhaCadastrar.Text != "")
             {
                 if (txtSenhaCadastrar.Text.Equals(txtSenha2Cadastrar.Text))
                 {
-                    UsuarioWeb uWeb = new UsuarioWeb(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
+                    try
+                    {
+                        UsuarioWeb uWeb = new UsuarioWeb(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
+                        uWeb.cadastrarUsuarioWeb();
+                        MessageBox.Show("Sucesso ao cadastrar usuario Web");
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Erro ao cadastrar usuario Web");
+                    }
                 }
                 else
                 {

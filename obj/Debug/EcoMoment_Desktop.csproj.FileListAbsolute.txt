@@ -17,3 +17,23 @@ C:\Users\enzop\source\repos\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.csproj
 C:\Users\enzop\source\repos\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.exe
 C:\Users\enzop\source\repos\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.pdb
 C:\Users\enzop\source\repos\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.FormCadastro.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.exe.config
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.exe
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.pdb
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\MySql.Data.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\System.Memory.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\System.Buffers.dll
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\bin\Debug\MySql.Data.xml
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.AssemblyReference.cache
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormCadastro.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormExcluirAtualizarUsuarioWeb.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormLogin.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.Properties.Resources.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.GenerateResource.cache
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.CoreCompileInputs.cache
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.CopyComplete
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.exe
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.pdb
