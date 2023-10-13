@@ -46,17 +46,17 @@ namespace Projeto_DuplinhaFeroz
             return cad;
         }
 
-        public static int VeriLogin(String usuario, String senha)
+        public static int VeriLogin(String email, String senha)
         {
             int retorno = 0; //quando não encontra nada
             try
             {
                 con.Open();
-                MySqlCommand login = new MySqlCommand("select * from Estudio_Login where usuario='" + usuario + "' and senha='" + senha + "'", con);
+                MySqlCommand login = new MySqlCommand("select * from EcoMomentBD_UsuarioAdm where EmailAdm='" + email + "' and SenhaAdm='" + senha + "'", con);
                 MySqlDataReader resultado = login.ExecuteReader();
                 if (resultado.Read())
                 {
-                    retorno = Convert.ToInt32(resultado["tipo"].ToString());
+                    retorno = 1;
                 }
             }
             catch (Exception ex)

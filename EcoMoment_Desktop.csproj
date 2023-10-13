@@ -51,12 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO_Conexao.cs" />
-    <Compile Include="FormAtualizarUsuarioWeb.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAtualizarUsuarioWeb.Designer.cs">
-      <DependentUpon>FormAtualizarUsuarioWeb.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormConsultarUsuarioWeb.cs">
       <SubType>Form</SubType>
     </Compile>

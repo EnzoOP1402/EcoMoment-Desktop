@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.gpbxExcluirWeb = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.comboBoxExcluirWeb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNomeExcluirWeb = new System.Windows.Forms.TextBox();
@@ -46,13 +47,15 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.gpbxExcluirWeb);
-            this.panel1.Location = new System.Drawing.Point(46, 12);
+            this.panel1.Location = new System.Drawing.Point(34, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(444, 511);
+            this.panel1.Size = new System.Drawing.Size(333, 415);
             this.panel1.TabIndex = 1;
             // 
             // gpbxExcluirWeb
             // 
+            this.gpbxExcluirWeb.Controls.Add(this.label5);
             this.gpbxExcluirWeb.Controls.Add(this.comboBoxExcluirWeb);
             this.gpbxExcluirWeb.Controls.Add(this.label4);
             this.gpbxExcluirWeb.Controls.Add(this.txtNomeExcluirWeb);
@@ -62,96 +65,119 @@
             this.gpbxExcluirWeb.Controls.Add(this.txtEmailExcluirWeb);
             this.gpbxExcluirWeb.Controls.Add(this.label2);
             this.gpbxExcluirWeb.Controls.Add(this.label1);
-            this.gpbxExcluirWeb.Location = new System.Drawing.Point(45, 96);
+            this.gpbxExcluirWeb.Location = new System.Drawing.Point(34, 78);
+            this.gpbxExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.gpbxExcluirWeb.Name = "gpbxExcluirWeb";
-            this.gpbxExcluirWeb.Size = new System.Drawing.Size(360, 392);
+            this.gpbxExcluirWeb.Padding = new System.Windows.Forms.Padding(2);
+            this.gpbxExcluirWeb.Size = new System.Drawing.Size(270, 318);
             this.gpbxExcluirWeb.TabIndex = 0;
             this.gpbxExcluirWeb.TabStop = false;
             this.gpbxExcluirWeb.Text = "Excluir";
-            this.gpbxExcluirWeb.Enter += new System.EventHandler(this.gpbxExcluirWeb_Enter);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(44, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 18);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Excluir Usuários Web";
             // 
             // comboBoxExcluirWeb
             // 
             this.comboBoxExcluirWeb.FormattingEnabled = true;
-            this.comboBoxExcluirWeb.Location = new System.Drawing.Point(72, 96);
+            this.comboBoxExcluirWeb.Location = new System.Drawing.Point(54, 78);
+            this.comboBoxExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxExcluirWeb.Name = "comboBoxExcluirWeb";
-            this.comboBoxExcluirWeb.Size = new System.Drawing.Size(177, 24);
+            this.comboBoxExcluirWeb.Size = new System.Drawing.Size(134, 21);
             this.comboBoxExcluirWeb.TabIndex = 8;
+            this.comboBoxExcluirWeb.SelectedIndexChanged += new System.EventHandler(this.comboBoxExcluirWeb_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 76);
+            this.label4.Location = new System.Drawing.Point(52, 62);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(18, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
+            this.label4.Text = "ID";
             // 
             // txtNomeExcluirWeb
             // 
-            this.txtNomeExcluirWeb.Location = new System.Drawing.Point(69, 163);
+            this.txtNomeExcluirWeb.Location = new System.Drawing.Point(52, 132);
+            this.txtNomeExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeExcluirWeb.Name = "txtNomeExcluirWeb";
-            this.txtNomeExcluirWeb.Size = new System.Drawing.Size(177, 22);
+            this.txtNomeExcluirWeb.Size = new System.Drawing.Size(134, 20);
             this.txtNomeExcluirWeb.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 274);
+            this.label3.Location = new System.Drawing.Point(52, 223);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 16);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Senha:";
             // 
             // btnExcluirWeb
             // 
-            this.btnExcluirWeb.Location = new System.Drawing.Point(44, 341);
+            this.btnExcluirWeb.Location = new System.Drawing.Point(33, 277);
+            this.btnExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.btnExcluirWeb.Name = "btnExcluirWeb";
-            this.btnExcluirWeb.Size = new System.Drawing.Size(242, 32);
+            this.btnExcluirWeb.Size = new System.Drawing.Size(182, 26);
             this.btnExcluirWeb.TabIndex = 4;
             this.btnExcluirWeb.Text = "Excluir/ Atualizar";
             this.btnExcluirWeb.UseVisualStyleBackColor = true;
+            this.btnExcluirWeb.Click += new System.EventHandler(this.btnExcluirWeb_Click);
             // 
             // txtSenhaExcluirWeb
             // 
-            this.txtSenhaExcluirWeb.Location = new System.Drawing.Point(72, 293);
+            this.txtSenhaExcluirWeb.Location = new System.Drawing.Point(54, 238);
+            this.txtSenhaExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaExcluirWeb.Name = "txtSenhaExcluirWeb";
-            this.txtSenhaExcluirWeb.Size = new System.Drawing.Size(177, 22);
+            this.txtSenhaExcluirWeb.Size = new System.Drawing.Size(134, 20);
             this.txtSenhaExcluirWeb.TabIndex = 3;
             // 
             // txtEmailExcluirWeb
             // 
-            this.txtEmailExcluirWeb.Location = new System.Drawing.Point(69, 224);
+            this.txtEmailExcluirWeb.Location = new System.Drawing.Point(52, 182);
+            this.txtEmailExcluirWeb.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailExcluirWeb.Name = "txtEmailExcluirWeb";
-            this.txtEmailExcluirWeb.Size = new System.Drawing.Size(180, 22);
+            this.txtEmailExcluirWeb.Size = new System.Drawing.Size(136, 20);
             this.txtEmailExcluirWeb.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 205);
+            this.label2.Location = new System.Drawing.Point(52, 167);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "E-mail:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 144);
+            this.label1.Location = new System.Drawing.Point(52, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 16);
+            this.label1.Size = new System.Drawing.Size(90, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome de usuário:";
             // 
             // FormExcluirAtualizarUsuarioWeb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 543);
+            this.ClientSize = new System.Drawing.Size(397, 441);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormExcluirAtualizarUsuarioWeb";
-            this.Text = "FormExcluirUsuárioWeb";
+            this.Text = "Excluir Usuário Web";
             this.panel1.ResumeLayout(false);
             this.gpbxExcluirWeb.ResumeLayout(false);
             this.gpbxExcluirWeb.PerformLayout();
@@ -172,5 +198,6 @@
         private System.Windows.Forms.TextBox txtSenhaExcluirWeb;
         private System.Windows.Forms.TextBox txtEmailExcluirWeb;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
     }
 }

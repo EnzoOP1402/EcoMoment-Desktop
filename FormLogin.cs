@@ -22,16 +22,6 @@ namespace EcoMoment_Desktop
                 Console.WriteLine("Erro de Conexão");
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             FormCadastro fc = new FormCadastro();
@@ -43,6 +33,40 @@ namespace EcoMoment_Desktop
         private void usuárioAdmToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
+            {
+                MessageBox.Show("Login realizado com sucesso!");
+                menuToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Nenhum usuário cadastrado com esse email. Tente novamente com um email e/ou senha diferente ou se cadastre agora mesmo");
+            }
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExcluirAtualizarUsuarioWeb f1 = new FormExcluirAtualizarUsuarioWeb(2);
+            f1.MdiParent = this;
+            f1.Show();
+            panel1.Visible = false;
+        }
+
+        private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExcluirAtualizarUsuarioWeb f1 = new FormExcluirAtualizarUsuarioWeb(1);
+            f1.MdiParent = this;
+            f1.Show();
+            panel1.Visible = false;
         }
     }
 }

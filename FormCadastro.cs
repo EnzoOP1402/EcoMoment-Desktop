@@ -26,13 +26,13 @@ namespace EcoMoment_Desktop
                 {
                     try
                     {
-                        UsuarioWeb uWeb = new UsuarioWeb(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
-                        uWeb.cadastrarUsuarioWeb();
-                        MessageBox.Show("Sucesso ao cadastrar usuario Web");
+                        UsuarioAdm uAdm = new UsuarioAdm(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
+                        uAdm.cadastrarUsuarioAdm();
+                        MessageBox.Show("Sucesso ao cadastrar usuário Adm");
                     }
                     catch(Exception ex)
                     {
-                        MessageBox.Show("Erro ao cadastrar usuario Web");
+                        MessageBox.Show("Erro ao cadastrar usuário Adm");
                     }
                 }
                 else

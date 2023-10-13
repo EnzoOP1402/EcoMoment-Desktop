@@ -43,24 +43,20 @@ namespace EcoMoment_Desktop
             return cad;
         }
 
-        public bool consultarUsuarioWeb(int id)
+        public MySqlDataReader consultarUsuarioWeb(int id)
         {
-            bool existe = false;
+            MySqlDataReader resultado = null;
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand consulta = new MySqlCommand("select * from EcoMomentBD_UsuarioAdm where idUsuarioAdm=" + id + "", DAO_Conexao.con);
-                MySqlDataReader resultado = consulta.ExecuteReader();
-                if (resultado.Read())
-                {
-                    existe = true;
-                }
+                MySqlCommand consulta = new MySqlCommand("select * from EcoMomentBD_UsuarioWeb where idUsuarioWeb=" + id + "", DAO_Conexao.con);
+                resultado = consulta.ExecuteReader();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            return existe;
+            return resultado;
         }
 
         public MySqlDataReader consultarTodosUsuariosWeb()
@@ -69,7 +65,7 @@ namespace EcoMoment_Desktop
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand comando = new MySqlCommand("select * from EcoMomentBD_UsuarioAdm", DAO_Conexao.con);
+                MySqlCommand comando = new MySqlCommand("select * from EcoMomentBD_UsuarioWeb", DAO_Conexao.con);
                 resultado = comando.ExecuteReader();
             }
             catch (Exception ex)
@@ -87,7 +83,7 @@ namespace EcoMoment_Desktop
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand sql = new MySqlCommand("delete from EcoMomentBD_UsuarioAdm where idUsuarioAdm = " + id + ")", DAO_Conexao.con);
+                MySqlCommand sql = new MySqlCommand("delete from EcoMomentBD_UsuarioWeb where idUsuarioWeb = "+id+")", DAO_Conexao.con);
                 sql.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -101,14 +97,15 @@ namespace EcoMoment_Desktop
             return result;
         }
 
-        public bool atualizarUsuarioWeb()
+        public bool atualizarUsuarioWeb(string nome, string email, string senha)
         {
             bool result = false;
 
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand sql = new MySqlCommand("update from EcoMomentBD_UsuarioAdm set (NomeAdm, EmailAdm, SenhaAdm) values  (" + nome + ", '" + email + "', '" + senha + "')", DAO_Conexao.con);
+                MySqlCommand sql = new MySqlCommand("update from EcoMomentBD_UsuarioWeb set (NomeWeb, EmailWeb, SenhaWeb) values  ('"+nome+"', '"+email+"', '"+senha+"')", DAO_Conexao.con);
+                sql.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
