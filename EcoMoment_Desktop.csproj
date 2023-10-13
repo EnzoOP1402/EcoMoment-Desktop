@@ -51,11 +51,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO_Conexao.cs" />
+    <Compile Include="FormConsultaEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaEmail.Designer.cs">
+      <DependentUpon>FormConsultaEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaID.Designer.cs">
+      <DependentUpon>FormConsultaID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaNome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaNome.Designer.cs">
+      <DependentUpon>FormConsultaNome.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConsultarUsuarioWeb.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormConsultarUsuarioWeb.Designer.cs">
       <DependentUpon>FormConsultarUsuarioWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaTodos.Designer.cs">
+      <DependentUpon>FormConsultaTodos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormExcluirAtualizarUsuarioWeb.cs">
       <SubType>Form</SubType>
@@ -81,6 +105,21 @@
     <Compile Include="UsuarioWeb.cs" />
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaEmail.resx">
+      <DependentUpon>FormConsultaEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaID.resx">
+      <DependentUpon>FormConsultaID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaNome.resx">
+      <DependentUpon>FormConsultaNome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarUsuarioWeb.resx">
+      <DependentUpon>FormConsultarUsuarioWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaTodos.resx">
+      <DependentUpon>FormConsultaTodos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormExcluirAtualizarUsuarioWeb.resx">
       <DependentUpon>FormExcluirAtualizarUsuarioWeb.cs</DependentUpon>

@@ -25,9 +25,7 @@ namespace EcoMoment_Desktop
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             FormCadastro fc = new FormCadastro();
-            fc.MdiParent = this;
             fc.Show();
-            panel1.Visible = false;
         }
 
         private void usuárioAdmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,7 +48,9 @@ namespace EcoMoment_Desktop
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            FormConsultarUsuarioWeb f1 = new FormConsultarUsuarioWeb();
+            f1.Show();
+            panel1.Visible = false;
         }
 
         private void excluirToolStripMenuItem_Click(object sender, EventArgs e)

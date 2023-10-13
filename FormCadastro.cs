@@ -28,7 +28,9 @@ namespace EcoMoment_Desktop
                     {
                         UsuarioAdm uAdm = new UsuarioAdm(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
                         uAdm.cadastrarUsuarioAdm();
-                        MessageBox.Show("Sucesso ao cadastrar usuário Adm");
+                        MessageBox.Show("Sucesso ao cadastrar usuário Adm. Este formulário fechará automáticamente em 5 segundos.");
+                        System.Threading.Thread.Sleep(5000);
+                        this.Hide();
                     }
                     catch(Exception ex)
                     {

@@ -16,5 +16,30 @@ namespace EcoMoment_Desktop
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormConsultaID f1 = new FormConsultaID();
+            f1.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormConsultaNome f1 = new FormConsultaNome();
+            f1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormConsultaEmail f1 = new FormConsultaEmail();
+            f1.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormConsultaTodos f1 = new FormConsultaTodos();
+            f1.Show();
+        }
     }
 }

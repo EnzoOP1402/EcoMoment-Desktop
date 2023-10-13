@@ -59,6 +59,38 @@ namespace EcoMoment_Desktop
             return resultado;
         }
 
+        public MySqlDataReader consultarUsuarioWebEmail(string email)
+        {
+            MySqlDataReader resultado = null;
+            try
+            {
+                DAO_Conexao.con.Open();
+                MySqlCommand consulta = new MySqlCommand("select * from EcoMomentBD_UsuarioWeb where EmailWeb = '" + email + "'", DAO_Conexao.con);
+                resultado = consulta.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return resultado;
+        }
+
+        public MySqlDataReader consultarUsuarioWebNome(string nome)
+        {
+            MySqlDataReader resultado = null;
+            try
+            {
+                DAO_Conexao.con.Open();
+                MySqlCommand consulta = new MySqlCommand("select * from EcoMomentBD_UsuarioWeb where NomeWeb='" + nome + "'", DAO_Conexao.con);
+                resultado = consulta.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return resultado;
+        }
+
         public MySqlDataReader consultarTodosUsuariosWeb()
         {
             MySqlDataReader resultado = null;

@@ -35,7 +35,6 @@
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.atualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarTodosOsUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -58,7 +57,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(514, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(528, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,7 +74,7 @@
             // usuáriosWebToolStripMenuItem
             // 
             this.usuáriosWebToolStripMenuItem.Name = "usuáriosWebToolStripMenuItem";
-            this.usuáriosWebToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosWebToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.usuáriosWebToolStripMenuItem.Text = "Usuários[Adm]";
             // 
             // usuárioAdmToolStripMenuItem
@@ -83,8 +82,7 @@
             this.usuárioAdmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.excluirToolStripMenuItem,
             this.atualizarToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.consultarTodosOsUsuáriosToolStripMenuItem});
+            this.consultarToolStripMenuItem});
             this.usuárioAdmToolStripMenuItem.Name = "usuárioAdmToolStripMenuItem";
             this.usuárioAdmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuárioAdmToolStripMenuItem.Text = "Usuário[Web]";
@@ -111,19 +109,13 @@
             this.consultarToolStripMenuItem.Text = "Consultar dados do usuário";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
-            // consultarTodosOsUsuáriosToolStripMenuItem
-            // 
-            this.consultarTodosOsUsuáriosToolStripMenuItem.Name = "consultarTodosOsUsuáriosToolStripMenuItem";
-            this.consultarTodosOsUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.consultarTodosOsUsuáriosToolStripMenuItem.Text = "Consultar todos os usuários";
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(71, 34);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(382, 391);
             this.panel1.TabIndex = 2;
@@ -141,7 +133,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Location = new System.Drawing.Point(118, 340);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(144, 28);
             this.btnCadastrar.TabIndex = 1;
@@ -157,9 +149,9 @@
             this.groupBox1.Controls.Add(this.lblEmailEntrar);
             this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Location = new System.Drawing.Point(89, 84);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(205, 214);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -168,7 +160,7 @@
             // txtSenhaEntrar
             // 
             this.txtSenhaEntrar.Location = new System.Drawing.Point(36, 104);
-            this.txtSenhaEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenhaEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaEntrar.Name = "txtSenhaEntrar";
             this.txtSenhaEntrar.PasswordChar = '*';
             this.txtSenhaEntrar.Size = new System.Drawing.Size(145, 20);
@@ -178,7 +170,7 @@
             // txtEmailEntrar
             // 
             this.txtEmailEntrar.Location = new System.Drawing.Point(36, 51);
-            this.txtEmailEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailEntrar.Name = "txtEmailEntrar";
             this.txtEmailEntrar.Size = new System.Drawing.Size(144, 20);
             this.txtEmailEntrar.TabIndex = 3;
@@ -207,7 +199,7 @@
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(36, 145);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(143, 28);
             this.btnLogin.TabIndex = 0;
@@ -219,12 +211,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 443);
+            this.ClientSize = new System.Drawing.Size(528, 478);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "+-";
@@ -257,7 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem atualizarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarTodosOsUsuáriosToolStripMenuItem;
     }
 }
 
