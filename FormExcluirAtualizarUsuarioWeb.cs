@@ -31,6 +31,7 @@ namespace EcoMoment_Desktop
 
             if (p == 1)
             {
+                this.Text = "Atualizar usuário Web";
                 btnExcluirWeb.Text = "Atualizar";
                 label5.Text = "Atualizar Usuário";
                 gpbxExcluirWeb.Text = "Atualizar";
@@ -78,24 +79,38 @@ namespace EcoMoment_Desktop
                 try
                 {
                     UsuarioWeb uWeb = new UsuarioWeb();
-                    uWeb.excluirUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString()));
-                    MessageBox.Show("Usuário excluído com sucesso!");
+                    if (uWeb.excluirUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString())))
+                    {
+                        MessageBox.Show("Usuário excluído com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao excluir Usuário Web. Tente novamente.");
+                    }
+                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro ao excluir Usuário Web");
+                    MessageBox.Show("Erro de execução.");
                 }
-            }else if (op == 1)
+            }
+            else if (op == 1)
             {
                 try
                 {
                     UsuarioWeb uWeb = new UsuarioWeb();
-                    uWeb.atualizarUsuarioWeb(txtNomeExcluirWeb.Text, txtEmailExcluirWeb.Text, txtSenhaExcluirWeb.Text);
-                    MessageBox.Show("Usuário atualizado com sucesso!");
+                    if(uWeb.atualizarUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString()), txtNomeExcluirWeb.Text, txtEmailExcluirWeb.Text, txtSenhaExcluirWeb.Text))
+                    {
+                        MessageBox.Show("Usuário atualizado com sucesso!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao atualizar Usuário Web. Tente novamente.");
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erro ao atualizar usuário web");
+                    MessageBox.Show("Erro de execução.");
                 }
             }
         }

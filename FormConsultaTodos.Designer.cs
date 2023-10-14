@@ -45,18 +45,21 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 402);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(627, 495);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 353);
+            this.button1.Location = new System.Drawing.Point(8, 434);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(447, 43);
+            this.button1.Size = new System.Drawing.Size(596, 53);
             this.button1.TabIndex = 4;
             this.button1.Text = "Mostrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,49 +73,62 @@
             this.NomeUsuario,
             this.EmailUsuario,
             this.SenhaUsuario});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 48);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(447, 308);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(596, 379);
             this.dataGridView1.TabIndex = 3;
             // 
             // idUsuario
             // 
             this.idUsuario.HeaderText = "ID";
+            this.idUsuario.MinimumWidth = 6;
             this.idUsuario.Name = "idUsuario";
+            this.idUsuario.Width = 125;
             // 
             // NomeUsuario
             // 
             this.NomeUsuario.HeaderText = "Nome de usuário";
+            this.NomeUsuario.MinimumWidth = 6;
             this.NomeUsuario.Name = "NomeUsuario";
+            this.NomeUsuario.Width = 125;
             // 
             // EmailUsuario
             // 
             this.EmailUsuario.HeaderText = "Email";
+            this.EmailUsuario.MinimumWidth = 6;
             this.EmailUsuario.Name = "EmailUsuario";
+            this.EmailUsuario.Width = 125;
             // 
             // SenhaUsuario
             // 
             this.SenhaUsuario.HeaderText = "Senha";
+            this.SenhaUsuario.MinimumWidth = 6;
             this.SenhaUsuario.Name = "SenhaUsuario";
+            this.SenhaUsuario.Width = 125;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(148, 16);
+            this.label2.Location = new System.Drawing.Point(197, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 20);
+            this.label2.Size = new System.Drawing.Size(281, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Consultar todos os usuários";
             // 
             // FormConsultaTodos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 427);
+            this.ClientSize = new System.Drawing.Size(655, 526);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConsultaTodos";
-            this.Text = "FormConsultaTodos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consulta de usuários - Geral";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

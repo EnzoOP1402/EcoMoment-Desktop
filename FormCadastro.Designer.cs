@@ -46,10 +46,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.gpbxCadastrar);
-            this.panel1.Location = new System.Drawing.Point(41, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(55, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 415);
+            this.panel1.Size = new System.Drawing.Size(437, 511);
             this.panel1.TabIndex = 0;
             // 
             // gpbxCadastrar
@@ -63,59 +63,57 @@
             this.gpbxCadastrar.Controls.Add(this.txtNomeCadastrar);
             this.gpbxCadastrar.Controls.Add(this.label2);
             this.gpbxCadastrar.Controls.Add(this.label1);
-            this.gpbxCadastrar.Location = new System.Drawing.Point(34, 78);
-            this.gpbxCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.gpbxCadastrar.Location = new System.Drawing.Point(45, 96);
+            this.gpbxCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gpbxCadastrar.Name = "gpbxCadastrar";
-            this.gpbxCadastrar.Padding = new System.Windows.Forms.Padding(2);
-            this.gpbxCadastrar.Size = new System.Drawing.Size(254, 318);
+            this.gpbxCadastrar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gpbxCadastrar.Size = new System.Drawing.Size(339, 391);
             this.gpbxCadastrar.TabIndex = 0;
             this.gpbxCadastrar.TabStop = false;
             this.gpbxCadastrar.Text = "Cadastrar";
             // 
             // txtSenha2Cadastrar
             // 
-            this.txtSenha2Cadastrar.Location = new System.Drawing.Point(52, 214);
-            this.txtSenha2Cadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenha2Cadastrar.Location = new System.Drawing.Point(69, 263);
+            this.txtSenha2Cadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenha2Cadastrar.Name = "txtSenha2Cadastrar";
             this.txtSenha2Cadastrar.PasswordChar = '*';
-            this.txtSenha2Cadastrar.Size = new System.Drawing.Size(134, 20);
+            this.txtSenha2Cadastrar.Size = new System.Drawing.Size(177, 22);
             this.txtSenha2Cadastrar.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 198);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(67, 244);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 13);
+            this.label4.Size = new System.Drawing.Size(180, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Digite sua senha novamente:";
             // 
             // txtSenhaCadastrar
             // 
-            this.txtSenhaCadastrar.Location = new System.Drawing.Point(52, 163);
-            this.txtSenhaCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenhaCadastrar.Location = new System.Drawing.Point(69, 201);
+            this.txtSenhaCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenhaCadastrar.Name = "txtSenhaCadastrar";
             this.txtSenhaCadastrar.PasswordChar = '*';
-            this.txtSenhaCadastrar.Size = new System.Drawing.Size(134, 20);
+            this.txtSenhaCadastrar.Size = new System.Drawing.Size(177, 22);
             this.txtSenhaCadastrar.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 148);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(67, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(49, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Senha:";
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(32, 278);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCadastrar.Location = new System.Drawing.Point(43, 342);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(182, 26);
+            this.btnCadastrar.Size = new System.Drawing.Size(243, 32);
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -123,50 +121,48 @@
             // 
             // txtEmailCadastrar
             // 
-            this.txtEmailCadastrar.Location = new System.Drawing.Point(52, 107);
-            this.txtEmailCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmailCadastrar.Location = new System.Drawing.Point(69, 132);
+            this.txtEmailCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmailCadastrar.Name = "txtEmailCadastrar";
-            this.txtEmailCadastrar.Size = new System.Drawing.Size(134, 20);
+            this.txtEmailCadastrar.Size = new System.Drawing.Size(177, 22);
             this.txtEmailCadastrar.TabIndex = 3;
             // 
             // txtNomeCadastrar
             // 
-            this.txtNomeCadastrar.Location = new System.Drawing.Point(50, 58);
-            this.txtNomeCadastrar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomeCadastrar.Location = new System.Drawing.Point(67, 71);
+            this.txtNomeCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeCadastrar.Name = "txtNomeCadastrar";
-            this.txtNomeCadastrar.Size = new System.Drawing.Size(136, 20);
+            this.txtNomeCadastrar.Size = new System.Drawing.Size(180, 22);
             this.txtNomeCadastrar.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 92);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(67, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "E-mail:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(67, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome de usuário:";
             // 
             // FormCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 471);
+            this.ClientSize = new System.Drawing.Size(551, 580);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormCadastro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "FormCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro de Administrador";
             this.panel1.ResumeLayout(false);
             this.gpbxCadastrar.ResumeLayout(false);
             this.gpbxCadastrar.PerformLayout();

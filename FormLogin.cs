@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,11 +16,22 @@ namespace EcoMoment_Desktop
     {
         public FormLogin()
         {
+            Thread thread = new Thread(new ThreadStart(splashScreen));
+            thread.Start();
+            Thread.Sleep(5000);
             InitializeComponent();
+            thread.Abort();
+
+
             if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
-                Console.WriteLine("Conectado");
+                Console.WriteLine("\nConectado\n");
             else
                 Console.WriteLine("Erro de Conexão");
+        }
+
+        private void splashScreen()
+        {
+            Application.Run(new SplashScreen());
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -28,10 +40,6 @@ namespace EcoMoment_Desktop
             fc.Show();
         }
 
-        private void usuárioAdmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -39,10 +47,11 @@ namespace EcoMoment_Desktop
             {
                 MessageBox.Show("Login realizado com sucesso!");
                 menuToolStripMenuItem.Enabled = true;
+                panel1.Visible = false;
             }
             else
             {
-                MessageBox.Show("Nenhum usuário cadastrado com esse email. Tente novamente com um email e/ou senha diferente ou se cadastre agora mesmo");
+                MessageBox.Show("Nenhum usuário cadastrado com esse email. Tente novamente com um email e/ou senha diferente ou cadastre-se agora mesmo!");
             }
         }
 

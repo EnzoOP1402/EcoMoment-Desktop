@@ -49,25 +49,29 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(465, 422);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(620, 519);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(152, 55);
+            this.textBox1.Location = new System.Drawing.Point(203, 68);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.Size = new System.Drawing.Size(256, 22);
             this.textBox1.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 379);
+            this.button1.Location = new System.Drawing.Point(8, 466);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(448, 33);
+            this.button1.Size = new System.Drawing.Size(597, 41);
             this.button1.TabIndex = 4;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -81,58 +85,72 @@
             this.NomeUsuario,
             this.EmailUsuario,
             this.SenhaUsuario});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 116);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 279);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(597, 343);
             this.dataGridView1.TabIndex = 3;
             // 
             // idUsuario
             // 
             this.idUsuario.HeaderText = "ID";
+            this.idUsuario.MinimumWidth = 6;
             this.idUsuario.Name = "idUsuario";
+            this.idUsuario.Width = 125;
             // 
             // NomeUsuario
             // 
             this.NomeUsuario.HeaderText = "Nome de usuário";
+            this.NomeUsuario.MinimumWidth = 6;
             this.NomeUsuario.Name = "NomeUsuario";
+            this.NomeUsuario.Width = 125;
             // 
             // EmailUsuario
             // 
             this.EmailUsuario.HeaderText = "Email";
+            this.EmailUsuario.MinimumWidth = 6;
             this.EmailUsuario.Name = "EmailUsuario";
+            this.EmailUsuario.Width = 125;
             // 
             // SenhaUsuario
             // 
             this.SenhaUsuario.HeaderText = "Senha";
+            this.SenhaUsuario.MinimumWidth = 6;
             this.SenhaUsuario.Name = "SenhaUsuario";
+            this.SenhaUsuario.Width = 125;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(148, 16);
+            this.label2.Location = new System.Drawing.Point(197, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 20);
+            this.label2.Size = new System.Drawing.Size(289, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Consultar usuários por nome";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(214, 39);
+            this.label1.Location = new System.Drawing.Point(285, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(93, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Digite o Nome";
             // 
             // FormConsultaNome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 446);
+            this.ClientSize = new System.Drawing.Size(657, 549);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormConsultaNome";
-            this.Text = "FormConsultaNome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consulta de usuários - Nome";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
