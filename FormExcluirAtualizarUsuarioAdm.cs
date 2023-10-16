@@ -27,7 +27,7 @@ namespace EcoMoment_Desktop
                 comboBoxExcluirAdm.Items.Add(reader["idUsuarioAdm"]);
             }
             DAO_Conexao.con.Close();//Fechou conexao
-
+            //a
             if (n1 == 1)
             {
                 this.Text = "Atualizar usuário ADM";
