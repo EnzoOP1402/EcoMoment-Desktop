@@ -90,6 +90,7 @@ namespace EcoMoment_Desktop
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro de execução.");
+                    MessageBox.Show(ex.Message);
                 }
             }
             else if (op == 1)
@@ -108,6 +109,7 @@ namespace EcoMoment_Desktop
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(ex.Message);
                     MessageBox.Show("Erro de execução.");
                 }
             }
