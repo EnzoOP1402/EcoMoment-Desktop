@@ -51,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO_Conexao.cs" />
+    <Compile Include="FormConsultaAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaAdm.Designer.cs">
+      <DependentUpon>FormConsultaAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConsultaEmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,12 @@
     </Compile>
     <Compile Include="FormConsultaID.Designer.cs">
       <DependentUpon>FormConsultaID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaIdAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaIdAdm.Designer.cs">
+      <DependentUpon>FormConsultaIdAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConsultaNome.cs">
       <SubType>Form</SubType>
@@ -80,6 +92,18 @@
     </Compile>
     <Compile Include="FormConsultaTodos.Designer.cs">
       <DependentUpon>FormConsultaTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaTodosAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaTodosAdm.Designer.cs">
+      <DependentUpon>FormConsultaTodosAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExcluirAtualizarUsuarioAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcluirAtualizarUsuarioAdm.Designer.cs">
+      <DependentUpon>FormExcluirAtualizarUsuarioAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormExcluirAtualizarUsuarioWeb.cs">
       <SubType>Form</SubType>
@@ -112,11 +136,17 @@
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaAdm.resx">
+      <DependentUpon>FormConsultaAdm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaEmail.resx">
       <DependentUpon>FormConsultaEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaID.resx">
       <DependentUpon>FormConsultaID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaIdAdm.resx">
+      <DependentUpon>FormConsultaIdAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaNome.resx">
       <DependentUpon>FormConsultaNome.cs</DependentUpon>
@@ -126,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormConsultaTodos.resx">
       <DependentUpon>FormConsultaTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaTodosAdm.resx">
+      <DependentUpon>FormConsultaTodosAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcluirAtualizarUsuarioAdm.resx">
+      <DependentUpon>FormExcluirAtualizarUsuarioAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormExcluirAtualizarUsuarioWeb.resx">
       <DependentUpon>FormExcluirAtualizarUsuarioWeb.cs</DependentUpon>

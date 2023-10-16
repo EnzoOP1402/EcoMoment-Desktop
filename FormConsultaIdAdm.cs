@@ -12,22 +12,23 @@ using System.Windows.Forms;
 
 namespace EcoMoment_Desktop
 {
-    public partial class FormConsultaID : Form
+    public partial class FormConsultaIdAdm : Form
     {
-        public FormConsultaID()
+        public FormConsultaIdAdm()
         {
             InitializeComponent();
-            UsuarioWeb usuarioWeb = new UsuarioWeb();
-            MySqlDataReader r = usuarioWeb.consultarTodosUsuariosWeb();
-            while (r.Read()) {
-                comboBox1.Items.Add(r["idUsuarioWeb"].ToString());
+            UsuarioAdm uAdm = new UsuarioAdm();
+            MySqlDataReader r = uAdm.consultarTodosUsuariosAdm();
+            while (r.Read())
+            {
+                comboBox1.Items.Add(r["idUsuarioAdm"].ToString());
             }
             DAO_Conexao.con.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UsuarioWeb uWeb = new UsuarioWeb();
+            UsuarioAdm uAdm = new UsuarioAdm();
             if (comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Selecione um ID");
@@ -37,10 +38,10 @@ namespace EcoMoment_Desktop
                 try
                 {
                     dataGridView1.Rows.Clear();
-                    MySqlDataReader reader = uWeb.consultarUsuarioWeb(int.Parse(comboBox1.SelectedItem.ToString()));
+                    MySqlDataReader reader = uAdm.consultarUsuarioAdmId(int.Parse(comboBox1.SelectedItem.ToString()));
                     while (reader.Read())
                     {
-                        dataGridView1.Rows.Add(reader["idUsuarioWeb"].ToString(), reader["NomeWeb"].ToString(), reader["EmailWeb"].ToString(), reader["SenhaWeb"].ToString());
+                        dataGridView1.Rows.Add(reader["idUsuarioAdm"].ToString(), reader["NomeAdm"].ToString(), reader["EmailAdm"].ToString(), reader["SenhaAdm"].ToString());
                     }
                     DAO_Conexao.con.Close();
                 }

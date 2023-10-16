@@ -30,6 +30,7 @@ namespace EcoMoment_Desktop
             {
                 try
                 {
+                    dataGridView1.Rows.Clear();
                     MySqlDataReader reader = uWeb.consultarUsuarioWebNome(textBox1.Text.ToString());
                     while (reader.Read())
                     {

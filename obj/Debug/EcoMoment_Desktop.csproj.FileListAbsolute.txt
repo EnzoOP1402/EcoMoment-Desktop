@@ -68,3 +68,8 @@ C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment_Desktop\obj\Debug\EcoMoment_
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.exe
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.pdb
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment_Desktop\obj\Debug\EcoMoment_Desktop.SplashScreen.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaAdm.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaIdAdm.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaTodosAdm.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.SplashScreen.resources
+C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormExcluirAtualizarUsuarioAdm.resources

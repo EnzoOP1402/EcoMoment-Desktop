@@ -58,6 +58,7 @@ namespace EcoMoment_Desktop
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormConsultarUsuarioWeb f1 = new FormConsultarUsuarioWeb();
+            f1.MdiParent = this;
             f1.Show();
             panel1.Visible = false;
         }
@@ -73,6 +74,30 @@ namespace EcoMoment_Desktop
         private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioWeb f1 = new FormExcluirAtualizarUsuarioWeb(1);
+            f1.MdiParent = this;
+            f1.Show();
+            panel1.Visible = false;
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormConsultaAdm f1 = new FormConsultaAdm();
+            f1.MdiParent = this;
+            f1.Show();
+            panel1.Visible = false;
+        }
+
+        private void excluirUsuárioADMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExcluirAtualizarUsuarioAdm f1 = new FormExcluirAtualizarUsuarioAdm(2);
+            f1.MdiParent = this;
+            f1.Show();
+            panel1.Visible = false;
+        }
+
+        private void atualizarDadosADMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExcluirAtualizarUsuarioAdm f1 = new FormExcluirAtualizarUsuarioAdm(1);
             f1.MdiParent = this;
             f1.Show();
             panel1.Visible = false;

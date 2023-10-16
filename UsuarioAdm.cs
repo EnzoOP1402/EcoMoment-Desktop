@@ -47,24 +47,21 @@ namespace EcoMoment_Desktop
             return cad;
         }
 
-        public bool consultarUsuarioAdm(int id)
+        public MySqlDataReader consultarUsuarioAdmId(int id)
         {
-            bool existe = false;
+            MySqlDataReader resultado = null;
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand consulta = new MySqlCommand("select * from EcoMomentBD_UsuarioAdm where idUsuarioAdm=" + id + "", DAO_Conexao.con);
-                MySqlDataReader resultado = consulta.ExecuteReader();
-                if (resultado.Read())
-                {
-                    existe = true;
-                }
+                MySqlCommand comando = new MySqlCommand("select * from EcoMomentBD_UsuarioAdm where idUsuarioAdm = "+id, DAO_Conexao.con);
+                resultado = comando.ExecuteReader();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+                Console.WriteLine("-----------ERRO--------------");
             }
-            return existe;
+            return resultado;
         }
 
         public MySqlDataReader consultarTodosUsuariosAdm()
@@ -105,14 +102,14 @@ namespace EcoMoment_Desktop
             return result;
         }
 
-        public bool atualizarUsuarioAdm()
+        public bool atualizarUsuarioAdm(int id,string nome, string email, string senha)
         {
             bool result = false;
 
             try
             {
                 DAO_Conexao.con.Open();
-                MySqlCommand sql = new MySqlCommand("update from EcoMomentBD_UsuarioAdm set (NomeAdm, EmailAdm, SenhaAdm) values  (" + nome + ", '" + email + "', '" + senha + "')", DAO_Conexao.con);
+                MySqlCommand sql = new MySqlCommand("update from EcoMomentBD_UsuarioAdm set (NomeAdm, EmailAdm, SenhaAdm) values  (" + nome + ", '" + email + "', '" + senha + "') where idUsuarioAdm = "+id, DAO_Conexao.con);
             }
             catch (Exception ex)
             {

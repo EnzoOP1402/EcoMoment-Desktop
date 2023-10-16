@@ -13,29 +13,23 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EcoMoment_Desktop
 {
-    public partial class FormConsultaEmail : Form
+    public partial class FormConsultaTodosAdm : Form
     {
-        public FormConsultaEmail()
+        public FormConsultaTodosAdm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UsuarioWeb uWeb = new UsuarioWeb();
-            if (textBox1.Text == "")
-            {
-                MessageBox.Show("Digite um email");
-            }
-            else
-            {
+            UsuarioAdm uAdm = new UsuarioAdm();
                 try
                 {
                     dataGridView1.Rows.Clear();
-                    MySqlDataReader reader = uWeb.consultarUsuarioWebEmail(textBox1.Text.ToString());
+                MySqlDataReader reader = uAdm.consultarTodosUsuariosAdm();
                     while (reader.Read())
                     {
-                        dataGridView1.Rows.Add(reader["idUsuarioWeb"].ToString(), reader["NomeWeb"].ToString(), reader["EmailWeb"].ToString(), reader["SenhaWeb"].ToString());
+                        dataGridView1.Rows.Add(reader["idUsuarioAdm"].ToString(), reader["NomeAdm"].ToString(), reader["EmailAdm"].ToString(), reader["SenhaAdm"].ToString());
                     }
                     DAO_Conexao.con.Close();
                 }
@@ -43,7 +37,6 @@ namespace EcoMoment_Desktop
                 {
                     MessageBox.Show("Erro ao consultar usuário");
                 }
-            }
         }
     }
 }
