@@ -25,6 +25,7 @@ namespace EcoMoment_Desktop
             UsuarioWeb uWeb = new UsuarioWeb();
             try
             {
+                dataGridView1.Rows.Clear();
                 MySqlDataReader reader = uWeb.consultarTodosUsuariosWeb();
                 while (reader.Read())
                 {
