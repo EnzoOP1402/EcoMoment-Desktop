@@ -73,3 +73,33 @@ C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\
 C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaTodosAdm.resources
 C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.SplashScreen.resources
 C:\Users\vitor\OneDrive\Área de Trabalho\git clone\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormExcluirAtualizarUsuarioAdm.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.exe.config
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.exe
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\EcoMoment_Desktop.pdb
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\MySql.Data.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\System.Memory.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\System.Buffers.dll
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\bin\Debug\MySql.Data.xml
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.AssemblyReference.cache
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormCadastro.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaAdm.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaEmail.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaID.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaIdAdm.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaNome.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultarUsuarioWeb.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaTodos.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormConsultaTodosAdm.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormExcluirAtualizarUsuarioAdm.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormExcluirAtualizarUsuarioWeb.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormLogin.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.Properties.Resources.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.SplashScreen.resources
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.GenerateResource.cache
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.CoreCompileInputs.cache
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.CopyComplete
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.exe
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.pdb

@@ -15,6 +15,7 @@ namespace EcoMoment_Desktop
         public FormCadastro()
         {
             InitializeComponent();
+            txtNomeCadastrar.Focus();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace EcoMoment_Desktop
             }
             else
             {
-                MessageBox.Show("Nenhum campo pode estar vazio.");
+                MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
     }

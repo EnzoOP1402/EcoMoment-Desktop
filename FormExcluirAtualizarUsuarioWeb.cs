@@ -20,6 +20,8 @@ namespace EcoMoment_Desktop
         {
             InitializeComponent();
 
+            comboBoxExcluirWeb.Focus();
+
             UsuarioWeb uWeb = new UsuarioWeb();
             //Abriu conexao
             MySqlDataReader reader = uWeb.consultarTodosUsuariosWeb();
@@ -74,44 +76,51 @@ namespace EcoMoment_Desktop
 
         private void btnExcluirWeb_Click(object sender, EventArgs e)
         {
-            if (op == 2)
+            if (comboBoxExcluirWeb.Text != "" && txtEmailExcluirWeb.Text != "" && txtNomeExcluirWeb.Text != "" && txtSenhaExcluirWeb.Text != "")
             {
-                try
+                if (op == 2)
                 {
-                    UsuarioWeb uWeb = new UsuarioWeb();
-                    if (uWeb.excluirUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString())))
+                    try
                     {
-                        MessageBox.Show("Usuário excluído com sucesso!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro ao excluir Usuário Web. Tente novamente.");
-                    }
+                        UsuarioWeb uWeb = new UsuarioWeb();
+                        if (uWeb.excluirUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString())))
+                        {
+                            MessageBox.Show("Usuário excluído com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao excluir Usuário Web. Tente novamente.");
+                        }
                     
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro de execução.");
+                    }
                 }
-                catch (Exception ex)
+                else if (op == 1)
                 {
-                    MessageBox.Show("Erro de execução.");
+                    try
+                    {
+                        UsuarioWeb uWeb = new UsuarioWeb();
+                        if(uWeb.atualizarUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString()), txtNomeExcluirWeb.Text, txtEmailExcluirWeb.Text, txtSenhaExcluirWeb.Text))
+                        {
+                            MessageBox.Show("Usuário atualizado com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao atualizar Usuário Web. Tente novamente.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro de execução.");
+                    }
                 }
             }
-            else if (op == 1)
+            else
             {
-                try
-                {
-                    UsuarioWeb uWeb = new UsuarioWeb();
-                    if(uWeb.atualizarUsuarioWeb(int.Parse(comboBoxExcluirWeb.SelectedItem.ToString()), txtNomeExcluirWeb.Text, txtEmailExcluirWeb.Text, txtSenhaExcluirWeb.Text))
-                    {
-                        MessageBox.Show("Usuário atualizado com sucesso!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro ao atualizar Usuário Web. Tente novamente.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro de execução.");
-                }
+                MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
     }

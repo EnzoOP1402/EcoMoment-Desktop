@@ -22,6 +22,9 @@ namespace EcoMoment_Desktop
             InitializeComponent();
             thread.Abort();
 
+            txtEmailEntrar.Focus();
+            usuárioAdmToolStripMenuItem.Enabled = false;
+            usuáriosWebToolStripMenuItem.Enabled = false;
 
             if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
                 Console.WriteLine("\nConectado\n");
@@ -38,20 +41,30 @@ namespace EcoMoment_Desktop
         {
             FormCadastro fc = new FormCadastro();
             fc.Show();
+            txtEmailEntrar.Text = "";
+            txtSenhaEntrar.Text = "";
         }
 
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
+            if (txtEmailEntrar.Text != "" && txtSenhaEntrar.Text != "")
             {
-                MessageBox.Show("Login realizado com sucesso!");
-                menuToolStripMenuItem.Enabled = true;
-                panel1.Visible = false;
+                if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
+                {
+                    MessageBox.Show("Login realizado com sucesso!");
+                    usuárioAdmToolStripMenuItem.Enabled = true;
+                    usuáriosWebToolStripMenuItem.Enabled = true;
+                    panel1.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Usuário não encontrado. Tente novamente com um email e/ou senha diferente ou cadastre-se agora mesmo no link abaixo!");
+                }
             }
             else
             {
-                MessageBox.Show("Nenhum usuário cadastrado com esse email. Tente novamente com um email e/ou senha diferente ou cadastre-se agora mesmo!");
+                MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
 
@@ -101,6 +114,11 @@ namespace EcoMoment_Desktop
             f1.MdiParent = this;
             f1.Show();
             panel1.Visible = false;
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

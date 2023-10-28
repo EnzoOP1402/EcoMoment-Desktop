@@ -19,6 +19,8 @@ namespace EcoMoment_Desktop
         {
             InitializeComponent();
 
+            comboBoxExcluirAdm.Focus();
+
             UsuarioAdm uadm = new UsuarioAdm();
             //Abriu conexao
             MySqlDataReader reader = uadm.consultarTodosUsuariosAdm();
@@ -72,46 +74,53 @@ namespace EcoMoment_Desktop
 
         private void btnExcluirAdm_Click(object sender, EventArgs e)
         {
-            if (op == 2)
+            if(comboBoxExcluirAdm.Text != "" && txtEmailExcluirAdm.Text != "" && txtNomeExcluirAdm.Text != "" && txtSenhaExcluirAdm.Text != "")
             {
-                try
+                if (op == 2)
                 {
-                    UsuarioAdm uadm = new UsuarioAdm();
-                    if (uadm.excluirUsuarioAdm(int.Parse(comboBoxExcluirAdm.SelectedItem.ToString())))
+                    try
                     {
-                        MessageBox.Show("Usuário excluído com sucesso!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro ao excluir Usuário Adm. Tente novamente.");
-                    }
+                        UsuarioAdm uadm = new UsuarioAdm();
+                        if (uadm.excluirUsuarioAdm(int.Parse(comboBoxExcluirAdm.SelectedItem.ToString())))
+                        {
+                            MessageBox.Show("Usuário excluído com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao excluir Usuário Adm. Tente novamente.");
+                        }
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro de execução.");
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else if (op == 1)
                 {
-                    MessageBox.Show("Erro de execução.");
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        UsuarioAdm uadm = new UsuarioAdm();
+                        if (uadm.atualizarUsuarioAdm(int.Parse(comboBoxExcluirAdm.SelectedItem.ToString()), txtNomeExcluirAdm.Text, txtEmailExcluirAdm.Text, txtSenhaExcluirAdm.Text))
+                        {
+                            MessageBox.Show("Usuário atualizado com sucesso!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao atualizar Usuário Adm. Tente novamente.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        MessageBox.Show("Erro de execução.");
+                    }
                 }
             }
-            else if (op == 1)
+            else
             {
-                try
-                {
-                    UsuarioAdm uadm = new UsuarioAdm();
-                    if (uadm.atualizarUsuarioAdm(int.Parse(comboBoxExcluirAdm.SelectedItem.ToString()), txtNomeExcluirAdm.Text, txtEmailExcluirAdm.Text, txtSenhaExcluirAdm.Text))
-                    {
-                        MessageBox.Show("Usuário atualizado com sucesso!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro ao atualizar Usuário Adm. Tente novamente.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    MessageBox.Show("Erro de execução.");
-                }
+                MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
     }
