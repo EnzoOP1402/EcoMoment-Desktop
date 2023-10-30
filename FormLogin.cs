@@ -41,6 +41,8 @@ namespace EcoMoment_Desktop
                 if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
+                    FormPaginaInicial fp = new FormPaginaInicial(1);
+                    fp.Show();
                     this.Close();
                 }
                 else
@@ -52,6 +54,12 @@ namespace EcoMoment_Desktop
             {
                 MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
+        }
+
+        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormPaginaInicial f = new FormPaginaInicial(1);
+            f.Show();
         }
     }
 }

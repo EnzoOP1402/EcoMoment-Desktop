@@ -1,4 +1,5 @@
-﻿using Projeto_DuplinhaFeroz;
+﻿using EcoMoment_Desktop.Properties;
+using Projeto_DuplinhaFeroz;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,24 +15,23 @@ namespace EcoMoment_Desktop
 {
     public partial class FormPaginaInicial : Form
     {
-        public FormPaginaInicial()
+        public FormPaginaInicial(int p)
         {
-            Thread thread = new Thread(new ThreadStart(splashScreen));
-            thread.Start();
-            Thread.Sleep(5000);
-            InitializeComponent();
-            foreach(Control c in this.Controls)
+            if (p != 1)
             {
-                if(c is MdiClient)
-                {
-                    c.BackColor = Color.White;
-                }
+                Thread thread = new Thread(new ThreadStart(splashScreen));
+                thread.Start();
+                Thread.Sleep(1000);
+                InitializeComponent();
+                thread.Abort();
             }
-            thread.Abort();
-            
-            usuáriosADMToolStripMenuItem.Enabled = false;
-            usuáriosWebToolStripMenuItem.Enabled = false;
 
+            if (p==1)
+            {
+                InitializeComponent();
+                btnLogin.Visible = false;
+                menuStrip1.Visible = true;
+            }
 
             if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
                 Console.WriteLine("\nConectado\n");
@@ -52,24 +52,10 @@ namespace EcoMoment_Desktop
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormLogin fl = new FormLogin();
+            FormLogin fl = new FormLogin(); 
+            //Fazer uma verificação por ponteiro no construtor do form login
             fl.Show();
-            //verifica login
-            /*
-            bntLogin.visible = false;
-            bntCadastrar.Visible = false;
-             */
-        }
-
-        private void bntCadastrar_Click(object sender, EventArgs e)
-        {
-            FormCadastro fc = new FormCadastro();
-            fc.Show();
-            //verifica login
-            /*
-            bntLogin.visible = false;
-            bntCadastrar.Visible = false;
-             */
+            this.Hide();
         }
 
         private void excluirUsuárioADMToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,12 +67,14 @@ namespace EcoMoment_Desktop
         private void atualizarDadosADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioAdm fa = new FormExcluirAtualizarUsuarioAdm(1);
+            fa.MdiParent = this;
             fa.Show();
         }
 
         private void consultarDadosDeUsuáriosADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormConsultaAdm fc = new FormConsultaAdm();
+            fc.MdiParent = this;
             fc.Show();
         }
 
@@ -99,12 +87,14 @@ namespace EcoMoment_Desktop
         private void atualizarUsuárioWebToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioWeb fa = new FormExcluirAtualizarUsuarioWeb(1);
+            fa.MdiParent = this;
             fa.Show();
         }
 
         private void consultarDadosDeUisuáriosWebToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormConsultarUsuarioWeb fc = new FormConsultarUsuarioWeb();
+            fc.MdiParent = this;
             fc.Show();
         }
     }

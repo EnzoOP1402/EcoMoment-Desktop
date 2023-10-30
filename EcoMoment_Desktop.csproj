@@ -219,5 +219,11 @@
   <ItemGroup>
     <None Include="Resources\Tela cadastro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página inicial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página inicial1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

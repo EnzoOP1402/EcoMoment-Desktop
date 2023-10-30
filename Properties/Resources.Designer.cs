@@ -63,6 +63,26 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Página_inicial {
+            get {
+                object obj = ResourceManager.GetObject("Página inicial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Página_inicial1 {
+            get {
+                object obj = ResourceManager.GetObject("Página inicial1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SplashScreen2 {
             get {
                 object obj = ResourceManager.GetObject("SplashScreen2", resourceCulture);
