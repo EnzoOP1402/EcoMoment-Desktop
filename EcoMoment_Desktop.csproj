@@ -216,5 +216,8 @@
   <ItemGroup>
     <None Include="Resources\Tela login2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela cadastro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
