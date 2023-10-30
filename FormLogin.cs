@@ -16,25 +16,8 @@ namespace EcoMoment_Desktop
     {
         public FormLogin()
         {
-            Thread thread = new Thread(new ThreadStart(splashScreen));
-            thread.Start();
-            Thread.Sleep(5000);
             InitializeComponent();
-            thread.Abort();
-
             txtEmailEntrar.Focus();
-            usuárioAdmToolStripMenuItem.Enabled = false;
-            usuáriosWebToolStripMenuItem.Enabled = false;
-
-            if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
-                Console.WriteLine("\nConectado\n");
-            else
-                Console.WriteLine("Erro de Conexão");
-        }
-
-        private void splashScreen()
-        {
-            Application.Run(new SplashScreen());
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -53,9 +36,7 @@ namespace EcoMoment_Desktop
                 if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    usuárioAdmToolStripMenuItem.Enabled = true;
-                    usuáriosWebToolStripMenuItem.Enabled = true;
-                    panel1.Visible = false;
+                    this.Close();
                 }
                 else
                 {
@@ -68,57 +49,6 @@ namespace EcoMoment_Desktop
             }
         }
 
-        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormConsultarUsuarioWeb f1 = new FormConsultarUsuarioWeb();
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormExcluirAtualizarUsuarioWeb f1 = new FormExcluirAtualizarUsuarioWeb(2);
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormExcluirAtualizarUsuarioWeb f1 = new FormExcluirAtualizarUsuarioWeb(1);
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormConsultaAdm f1 = new FormConsultaAdm();
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void excluirUsuárioADMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormExcluirAtualizarUsuarioAdm f1 = new FormExcluirAtualizarUsuarioAdm(2);
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void atualizarDadosADMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormExcluirAtualizarUsuarioAdm f1 = new FormExcluirAtualizarUsuarioAdm(1);
-            f1.MdiParent = this;
-            f1.Show();
-            panel1.Visible = false;
-        }
-
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
     }
 }

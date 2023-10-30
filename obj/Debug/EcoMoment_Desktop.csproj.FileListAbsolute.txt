@@ -103,3 +103,4 @@ C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.csproj.CopyComplete
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.exe
 C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.pdb
+C:\Users\enzop\OneDrive\Área de Trabalho\EcoMoment-Desktop\obj\Debug\EcoMoment_Desktop.FormPaginaInicial.resources
