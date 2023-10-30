@@ -29,130 +29,76 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtSenhaEntrar = new System.Windows.Forms.TextBox();
             this.txtEmailEntrar = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.lblSenhaEntrar = new System.Windows.Forms.Label();
-            this.lblEmailEntrar = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.BackgroundImage = global::EcoMoment_Desktop.Properties.Resources.Tela_login2;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.txtSenhaEntrar);
+            this.panel1.Controls.Add(this.txtEmailEntrar);
             this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(21, 11);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Location = new System.Drawing.Point(1, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(417, 486);
+            this.panel1.Size = new System.Drawing.Size(434, 679);
             this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 47);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "EcoMoment";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 393);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Não tem uma conta? Cadastre-se!";
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Location = new System.Drawing.Point(109, 422);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(192, 34);
-            this.btnCadastrar.TabIndex = 1;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtSenhaEntrar);
-            this.groupBox1.Controls.Add(this.txtEmailEntrar);
-            this.groupBox1.Controls.Add(this.btnLogin);
-            this.groupBox1.Controls.Add(this.lblSenhaEntrar);
-            this.groupBox1.Controls.Add(this.lblEmailEntrar);
-            this.groupBox1.Location = new System.Drawing.Point(72, 107);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(273, 263);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Entrar";
             // 
             // txtSenhaEntrar
             // 
-            this.txtSenhaEntrar.Location = new System.Drawing.Point(48, 128);
+            this.txtSenhaEntrar.Location = new System.Drawing.Point(55, 186);
             this.txtSenhaEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenhaEntrar.Name = "txtSenhaEntrar";
             this.txtSenhaEntrar.PasswordChar = '*';
-            this.txtSenhaEntrar.Size = new System.Drawing.Size(192, 22);
+            this.txtSenhaEntrar.Size = new System.Drawing.Size(318, 22);
             this.txtSenhaEntrar.TabIndex = 4;
             this.txtSenhaEntrar.Text = "batata";
             // 
             // txtEmailEntrar
             // 
-            this.txtEmailEntrar.Location = new System.Drawing.Point(48, 63);
+            this.txtEmailEntrar.Location = new System.Drawing.Point(52, 119);
             this.txtEmailEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmailEntrar.Name = "txtEmailEntrar";
-            this.txtEmailEntrar.Size = new System.Drawing.Size(191, 22);
+            this.txtEmailEntrar.Size = new System.Drawing.Size(318, 22);
             this.txtEmailEntrar.TabIndex = 3;
             this.txtEmailEntrar.Text = "vitorwolf0007@hotmail.com";
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Location = new System.Drawing.Point(80, 593);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(278, 44);
+            this.btnCadastrar.TabIndex = 1;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(48, 178);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(80, 490);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(191, 34);
+            this.btnLogin.Size = new System.Drawing.Size(278, 44);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // lblSenhaEntrar
-            // 
-            this.lblSenhaEntrar.AutoSize = true;
-            this.lblSenhaEntrar.Location = new System.Drawing.Point(45, 110);
-            this.lblSenhaEntrar.Name = "lblSenhaEntrar";
-            this.lblSenhaEntrar.Size = new System.Drawing.Size(49, 16);
-            this.lblSenhaEntrar.TabIndex = 2;
-            this.lblSenhaEntrar.Text = "Senha:";
-            // 
-            // lblEmailEntrar
-            // 
-            this.lblEmailEntrar.AutoSize = true;
-            this.lblEmailEntrar.Location = new System.Drawing.Point(45, 44);
-            this.lblEmailEntrar.Name = "lblEmailEntrar";
-            this.lblEmailEntrar.Size = new System.Drawing.Size(48, 16);
-            this.lblEmailEntrar.TabIndex = 1;
-            this.lblEmailEntrar.Text = "E-mail:";
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 681);
+            this.ClientSize = new System.Drawing.Size(440, 681);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormLogin";
@@ -160,23 +106,16 @@
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblSenhaEntrar;
-        private System.Windows.Forms.Label lblEmailEntrar;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtSenhaEntrar;
         private System.Windows.Forms.TextBox txtEmailEntrar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
 

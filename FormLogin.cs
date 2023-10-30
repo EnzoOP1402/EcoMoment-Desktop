@@ -18,6 +18,11 @@ namespace EcoMoment_Desktop
         {
             InitializeComponent();
             txtEmailEntrar.Focus();
+
+            if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
+                Console.WriteLine("\nConectado\n");
+            else
+                Console.WriteLine("Erro de Conexão");
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -48,7 +53,5 @@ namespace EcoMoment_Desktop
                 MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
-
-        
     }
 }
