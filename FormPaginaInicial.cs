@@ -15,23 +15,17 @@ namespace EcoMoment_Desktop
 {
     public partial class FormPaginaInicial : Form
     {
-        public FormPaginaInicial(int p)
-        {
-            if (p != 1)
-            {
-                Thread thread = new Thread(new ThreadStart(splashScreen));
-                thread.Start();
-                Thread.Sleep(1000);
-                InitializeComponent();
-                thread.Abort();
-            }
+        private int a = 0;
 
-            if (p==1)
-            {
-                InitializeComponent();
-                btnLogin.Visible = false;
-                menuStrip1.Visible = true;
-            }
+        public int A { get => a; set => a = value; }
+
+        public FormPaginaInicial()
+        {
+            Thread thread = new Thread(new ThreadStart(splashScreen));
+            thread.Start();
+            Thread.Sleep(1000);
+            InitializeComponent();
+            thread.Abort();
 
             if (DAO_Conexao.getConexao("143.106.241.3", "cl202247", "cl202247", "ENVI2224*"))
                 Console.WriteLine("\nConectado\n");
@@ -52,16 +46,22 @@ namespace EcoMoment_Desktop
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormLogin fl = new FormLogin(); 
-            //Fazer uma verificação por ponteiro no construtor do form login
+            a = 0;
+            FormLogin fl = new FormLogin();
             fl.Show();
-            this.Hide();
+            if (a == 1)
+            {
+                btnLogin.Visible = false;
+                menuStrip1.Visible = true;
+            }
         }
 
         private void excluirUsuárioADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioAdm fe = new FormExcluirAtualizarUsuarioAdm(2);
+            fe.MdiParent = this;
             fe.Show();
+
         }
 
         private void atualizarDadosADMToolStripMenuItem_Click(object sender, EventArgs e)

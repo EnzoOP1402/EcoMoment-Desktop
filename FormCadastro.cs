@@ -28,14 +28,24 @@ namespace EcoMoment_Desktop
                     try
                     {
                         UsuarioAdm uAdm = new UsuarioAdm(txtNomeCadastrar.Text, txtEmailCadastrar.Text, txtSenha2Cadastrar.Text);
-                        uAdm.cadastrarUsuarioAdm();
-                        MessageBox.Show("Sucesso ao cadastrar usuário Adm. Este formulário fechará automáticamente em 5 segundos.");
-                        System.Threading.Thread.Sleep(5000);
-                        this.Hide();
+                        if (uAdm.cadastrarUsuarioAdm())
+                        {
+                            MessageBox.Show("Sucesso ao cadastrar usuário Adm. Este formulário fechará automáticamente em 3 segundos.");
+                            FormPaginaInicial fp = new FormPaginaInicial();
+                            fp.A = 1;
+                            System.Threading.Thread.Sleep(3000);
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro de excução ao cadastrar usuário Adm. Revise seus dados e tente novamente.");
+                        }
+                        
+                        
                     }
                     catch(Exception ex)
                     {
-                        MessageBox.Show("Erro ao cadastrar usuário Adm");
+                        MessageBox.Show("Erro de excução ao cadastrar usuário Adm");
                     }
                 }
                 else
