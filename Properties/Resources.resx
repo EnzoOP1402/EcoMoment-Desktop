@@ -124,6 +124,9 @@
   <data name="Tela login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tela login2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Padrão de consultar todos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Padrão de consultar todos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tela login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tela login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,10 +136,13 @@
   <data name="Página inicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Página inicial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Página inicial1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Página inicial1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SplashScreen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SplashScreen2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Página inicial1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Página inicial1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Consultar por email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Consultar por email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

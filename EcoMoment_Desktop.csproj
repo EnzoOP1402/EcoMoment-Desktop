@@ -225,5 +225,11 @@
   <ItemGroup>
     <None Include="Resources\Página inicial1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padrão de consultar todos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consultar por email.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

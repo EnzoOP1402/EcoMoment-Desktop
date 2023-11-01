@@ -63,6 +63,26 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Consultar_por_email {
+            get {
+                object obj = ResourceManager.GetObject("Consultar por email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Padrão_de_consultar_todos {
+            get {
+                object obj = ResourceManager.GetObject("Padrão de consultar todos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Página_inicial {
             get {
                 object obj = ResourceManager.GetObject("Página inicial", resourceCulture);
