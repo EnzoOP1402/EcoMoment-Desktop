@@ -234,5 +234,14 @@
   <ItemGroup>
     <None Include="Resources\Menu de busca - Adm.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu de busca - Web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir Adm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atualizar Adm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

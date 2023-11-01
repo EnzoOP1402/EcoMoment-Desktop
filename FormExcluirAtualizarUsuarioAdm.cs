@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using EcoMoment_Desktop.Properties;
+using MySql.Data.MySqlClient;
 using Projeto_DuplinhaFeroz;
 using System;
 using System.Collections.Generic;
@@ -34,9 +35,8 @@ namespace EcoMoment_Desktop
             {
                 this.Text = "Atualizar usuário ADM";
                 btnExcluirAdm.Text = "Atualizar";
-                label5.Text = "Atualizar Usuário ADM";
-                gpbxExcluirAdm.Text = "Atualizar";
                 this.Text = "Atualizar Usuário ADM";
+                pictureBox1.BackgroundImage = Resources.Atualizar_Adm;
                 op = 1;
             }
             else

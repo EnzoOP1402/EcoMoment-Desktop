@@ -63,6 +63,16 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Atualizar_Adm {
+            get {
+                object obj = ResourceManager.GetObject("Atualizar Adm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Consultar_por_email {
             get {
                 object obj = ResourceManager.GetObject("Consultar por email", resourceCulture);
@@ -73,9 +83,29 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Excluir_Adm {
+            get {
+                object obj = ResourceManager.GetObject("Excluir Adm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_de_busca___Adm {
             get {
                 object obj = ResourceManager.GetObject("Menu de busca - Adm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu_de_busca___Web {
+            get {
+                object obj = ResourceManager.GetObject("Menu de busca - Web", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
