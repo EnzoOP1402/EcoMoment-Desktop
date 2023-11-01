@@ -106,6 +106,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormExcluirAtualizarUsuarioAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormExcluirAtualizarUsuarioAdm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -114,12 +115,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBoxExcluirAdm;
         private System.Windows.Forms.TextBox txtNomeExcluirAdm;
         private System.Windows.Forms.Button btnExcluirAdm;
         private System.Windows.Forms.TextBox txtSenhaExcluirAdm;
         private System.Windows.Forms.TextBox txtEmailExcluirAdm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

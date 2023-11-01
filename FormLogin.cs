@@ -29,6 +29,7 @@ namespace EcoMoment_Desktop
         {
             FormCadastro fc = new FormCadastro();
             fc.Show();
+            this.Close();
             txtEmailEntrar.Text = "";
             txtSenhaEntrar.Text = "";
         }
@@ -41,8 +42,7 @@ namespace EcoMoment_Desktop
                 if(DAO_Conexao.VeriLogin(txtEmailEntrar.Text, txtSenhaEntrar.Text)==1)
                 {
                     MessageBox.Show("Login realizado com sucesso!");
-                    FormPaginaInicial fp = new FormPaginaInicial();
-                    fp.A = 1;
+                    this.Close();
                     
                 }
                 else

@@ -43,6 +43,7 @@ namespace EcoMoment_Desktop
             else
             {
                 btnExcluirWeb.Text = "Excluir";
+                txtSenhaExcluirWeb.Visible = false;
                 op = 2;
             }
         }
