@@ -73,6 +73,16 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menu_de_busca___Adm {
+            get {
+                object obj = ResourceManager.GetObject("Menu de busca - Adm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Padrão_de_consultar_todos {
             get {
                 object obj = ResourceManager.GetObject("Padrão de consultar todos", resourceCulture);

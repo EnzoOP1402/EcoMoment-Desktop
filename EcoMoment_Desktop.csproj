@@ -231,5 +231,8 @@
   <ItemGroup>
     <None Include="Resources\Consultar por email.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu de busca - Adm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
