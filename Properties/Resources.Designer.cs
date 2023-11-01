@@ -73,6 +73,16 @@ namespace EcoMoment_Desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Atualizar_Web {
+            get {
+                object obj = ResourceManager.GetObject("Atualizar Web", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Consultar_por_email {
             get {
                 object obj = ResourceManager.GetObject("Consultar por email", resourceCulture);
@@ -86,6 +96,16 @@ namespace EcoMoment_Desktop.Properties {
         internal static System.Drawing.Bitmap Excluir_Adm {
             get {
                 object obj = ResourceManager.GetObject("Excluir Adm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Excluir_Web {
+            get {
+                object obj = ResourceManager.GetObject("Excluir Web", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

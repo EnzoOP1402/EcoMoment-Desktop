@@ -23,7 +23,7 @@ namespace EcoMoment_Desktop
         {
             Thread thread = new Thread(new ThreadStart(splashScreen));
             thread.Start();
-            Thread.Sleep(1000);
+            Thread.Sleep(5000);
             InitializeComponent();
             thread.Abort();
 
@@ -49,17 +49,11 @@ namespace EcoMoment_Desktop
             a = 0;
             FormLogin fl = new FormLogin();
             fl.Show();
-            if (a == 1)
-            {
-                btnLogin.Visible = false;
-                menuStrip1.Visible = true;
-            }
         }
 
         private void excluirUsuárioADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioAdm fe = new FormExcluirAtualizarUsuarioAdm(2);
-            fe.MdiParent = this;
             fe.Show();
 
         }
@@ -67,14 +61,12 @@ namespace EcoMoment_Desktop
         private void atualizarDadosADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioAdm fa = new FormExcluirAtualizarUsuarioAdm(1);
-            fa.MdiParent = this;
             fa.Show();
         }
 
         private void consultarDadosDeUsuáriosADMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormConsultaAdm fc = new FormConsultaAdm();
-            fc.MdiParent = this;
             fc.Show();
         }
 
@@ -87,14 +79,12 @@ namespace EcoMoment_Desktop
         private void atualizarUsuárioWebToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormExcluirAtualizarUsuarioWeb fa = new FormExcluirAtualizarUsuarioWeb(1);
-            fa.MdiParent = this;
             fa.Show();
         }
 
         private void consultarDadosDeUisuáriosWebToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormConsultarUsuarioWeb fc = new FormConsultarUsuarioWeb();
-            fc.MdiParent = this;
             fc.Show();
         }
     }

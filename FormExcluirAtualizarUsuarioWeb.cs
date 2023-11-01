@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using EcoMoment_Desktop.Properties;
+using MySql.Data.MySqlClient;
 using Projeto_DuplinhaFeroz;
 using System;
 using System.Collections.Generic;
@@ -35,9 +36,8 @@ namespace EcoMoment_Desktop
             {
                 this.Text = "Atualizar usuário Web";
                 btnExcluirWeb.Text = "Atualizar";
-                label5.Text = "Atualizar Usuário";
-                gpbxExcluirWeb.Text = "Atualizar";
                 this.Text = "Atualizar Usuário Web";
+                pictureBox1.BackgroundImage = Resources.Atualizar_Web;
                 op = 1;
             }
             else
@@ -123,5 +123,6 @@ namespace EcoMoment_Desktop
                 MessageBox.Show("Nenhum campo pode estar vazio. Preencha todos e tente novamente.");
             }
         }
+
     }
 }
