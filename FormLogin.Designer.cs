@@ -31,6 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atualizarDadosADMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirUsuárioADMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioAdmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.atualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,9 +48,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblSenhaEntrar = new System.Windows.Forms.Label();
             this.lblEmailEntrar = new System.Windows.Forms.Label();
-            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.atualizarDadosADMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.excluirUsuárioADMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,8 +83,29 @@
             this.atualizarDadosADMToolStripMenuItem,
             this.excluirUsuárioADMToolStripMenuItem});
             this.usuáriosWebToolStripMenuItem.Name = "usuáriosWebToolStripMenuItem";
-            this.usuáriosWebToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosWebToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.usuáriosWebToolStripMenuItem.Text = "Usuários[Adm]";
+            // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.consultaToolStripMenuItem.Text = "Consultar dados de usuários ADM";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
+            // 
+            // atualizarDadosADMToolStripMenuItem
+            // 
+            this.atualizarDadosADMToolStripMenuItem.Name = "atualizarDadosADMToolStripMenuItem";
+            this.atualizarDadosADMToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.atualizarDadosADMToolStripMenuItem.Text = "Atualizar dados ADM";
+            this.atualizarDadosADMToolStripMenuItem.Click += new System.EventHandler(this.atualizarDadosADMToolStripMenuItem_Click);
+            // 
+            // excluirUsuárioADMToolStripMenuItem
+            // 
+            this.excluirUsuárioADMToolStripMenuItem.Name = "excluirUsuárioADMToolStripMenuItem";
+            this.excluirUsuárioADMToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.excluirUsuárioADMToolStripMenuItem.Text = "Excluir usuário ADM";
+            this.excluirUsuárioADMToolStripMenuItem.Click += new System.EventHandler(this.excluirUsuárioADMToolStripMenuItem_Click);
             // 
             // usuárioAdmToolStripMenuItem
             // 
@@ -92,7 +114,7 @@
             this.atualizarToolStripMenuItem,
             this.consultarToolStripMenuItem});
             this.usuárioAdmToolStripMenuItem.Name = "usuárioAdmToolStripMenuItem";
-            this.usuárioAdmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuárioAdmToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.usuárioAdmToolStripMenuItem.Text = "Usuário[Web]";
             // 
             // excluirToolStripMenuItem
@@ -118,12 +140,13 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(218, 61);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(313, 395);
             this.panel1.TabIndex = 2;
@@ -152,7 +175,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Location = new System.Drawing.Point(82, 343);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(144, 28);
             this.btnCadastrar.TabIndex = 1;
@@ -168,9 +191,9 @@
             this.groupBox1.Controls.Add(this.lblSenhaEntrar);
             this.groupBox1.Controls.Add(this.lblEmailEntrar);
             this.groupBox1.Location = new System.Drawing.Point(54, 87);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(205, 214);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -179,7 +202,7 @@
             // txtSenhaEntrar
             // 
             this.txtSenhaEntrar.Location = new System.Drawing.Point(36, 104);
-            this.txtSenhaEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenhaEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaEntrar.Name = "txtSenhaEntrar";
             this.txtSenhaEntrar.PasswordChar = '*';
             this.txtSenhaEntrar.Size = new System.Drawing.Size(145, 20);
@@ -189,7 +212,7 @@
             // txtEmailEntrar
             // 
             this.txtEmailEntrar.Location = new System.Drawing.Point(36, 51);
-            this.txtEmailEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailEntrar.Name = "txtEmailEntrar";
             this.txtEmailEntrar.Size = new System.Drawing.Size(144, 20);
             this.txtEmailEntrar.TabIndex = 3;
@@ -198,7 +221,7 @@
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(36, 145);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(143, 28);
             this.btnLogin.TabIndex = 0;
@@ -226,26 +249,14 @@
             this.lblEmailEntrar.TabIndex = 1;
             this.lblEmailEntrar.Text = "E-mail:";
             // 
-            // consultaToolStripMenuItem
+            // button1
             // 
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.consultaToolStripMenuItem.Text = "Consultar dados de usuários ADM";
-            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
-            // 
-            // atualizarDadosADMToolStripMenuItem
-            // 
-            this.atualizarDadosADMToolStripMenuItem.Name = "atualizarDadosADMToolStripMenuItem";
-            this.atualizarDadosADMToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.atualizarDadosADMToolStripMenuItem.Text = "Atualizar dados ADM";
-            this.atualizarDadosADMToolStripMenuItem.Click += new System.EventHandler(this.atualizarDadosADMToolStripMenuItem_Click);
-            // 
-            // excluirUsuárioADMToolStripMenuItem
-            // 
-            this.excluirUsuárioADMToolStripMenuItem.Name = "excluirUsuárioADMToolStripMenuItem";
-            this.excluirUsuárioADMToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.excluirUsuárioADMToolStripMenuItem.Text = "Excluir usuário ADM";
-            this.excluirUsuárioADMToolStripMenuItem.Click += new System.EventHandler(this.excluirUsuárioADMToolStripMenuItem_Click);
+            this.button1.Location = new System.Drawing.Point(116, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormLogin
             // 
@@ -256,7 +267,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Início";
@@ -293,6 +304,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem atualizarDadosADMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirUsuárioADMToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 
